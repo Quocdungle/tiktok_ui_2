@@ -1,14 +1,14 @@
-import { useEffect, useState } from 'react';
+import { faCircleXmark, faMagnifyingGlass, faSpinner } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircleXmark, faSpinner, faMagnifyingGlass, faSignIn } from '@fortawesome/free-solid-svg-icons';
-import { Wrapper as PopperWrapper } from '~/components/Popper';
 import Tippy from '@tippyjs/react/headless';
+import { useEffect, useState } from 'react';
+import { Wrapper as PopperWrapper } from '~/components/Popper';
 
-import Button from '~/components/Button';
-import styles from './Header.module.scss';
 import classNames from 'classnames/bind';
 import images from '~/assets/images';
 import AccountItem from '~/components/AccountItem';
+import Button from '~/components/Button';
+import styles from './Header.module.scss';
 
 const cx = classNames.bind(styles);
 function Header() {
