@@ -56,7 +56,7 @@ const MENU_ITEMS = [
     },
 ];
 function Header() {
-    const currentUser = false;
+    const currentUser = true;
 
     const handleMenuChange = (menuItem) => {
         switch (menuItem.type) {
@@ -146,7 +146,7 @@ function Header() {
                                 src=""
                                 className={cx('user-avatar')}
                                 alt="Van A"
-                                fallback="https://png.pngtree.com/png-vector/20190118/ourlarge/pngtree-folder-line-filled-icon-png-image_324821.jpg"
+                                fallback="https://gamek.mediacdn.vn/133514250583805952/2021/9/17/photo-1-1631856680040545802895.jpg"
                             />
                         ) : (
                             <button className={cx('more-btn')}>
