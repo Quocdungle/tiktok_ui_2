@@ -102,17 +102,29 @@ function Header() {
                 <div className={cx('actions')}>
                     {currentUser ? (
                         <>
-                            <Tippy content="Upload video" placement="bottom" delay={(0, 50)}>
+                            <Tippy
+                                content="Upload video"
+                                placement="bottom"
+                                delay={(0, 50)}
+                            >
                                 <button className={cx('actions-btn')}>
                                     <UploadIcon />
                                 </button>
                             </Tippy>
-                            <Tippy content="Message" placement="bottom" delay={(0, 50)}>
+                            <Tippy
+                                content="Message"
+                                placement="bottom"
+                                delay={(0, 50)}
+                            >
                                 <button className={cx('actions-btn')}>
                                     <MessageIcon />
                                 </button>
                             </Tippy>
-                            <Tippy content="Inbox" placement="bottom" delay={(0, 50)}>
+                            <Tippy
+                                content="Inbox"
+                                placement="bottom"
+                                delay={(0, 50)}
+                            >
                                 <button className={cx('actions-btn')}>
                                     <InboxIcon />
                                     <span className={cx('badge')}>12</span>
@@ -132,13 +144,16 @@ function Header() {
                             </Button>
                         </>
                     )}
-                    <Menu items={currentUser ? userMenu : MENU_ITEMS} onChange={handleMenuChange}>
+                    <Menu
+                        items={currentUser ? userMenu : MENU_ITEMS}
+                        onChange={handleMenuChange}
+                    >
                         {currentUser ? (
                             <Image
                                 src=""
                                 className={cx('user-avatar')}
                                 alt="Van A"
-                                // fallback="https://png.pngtree.com/png-vector/20190118/ourlarge/pngtree-folder-line-filled-icon-png-image_324821.jpg"
+                                fallback="https://png.pngtree.com/png-vector/20190118/ourlarge/pngtree-folder-line-filled-icon-png-image_324821.jpg"
                             />
                         ) : (
                             <button className={cx('more-btn')}>
